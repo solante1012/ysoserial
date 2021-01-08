@@ -68,6 +68,8 @@ public class CommonsCollections1 extends PayloadRunner implements ObjectPayload<
 
 		final Map lazyMap = LazyMap.decorate(innerMap, transformerChain);
 
+
+
 		final Map mapProxy = Gadgets.createMemoitizedProxy(lazyMap, Map.class);
 
 		final InvocationHandler handler = Gadgets.createMemoizedInvocationHandler(mapProxy);
